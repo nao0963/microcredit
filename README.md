@@ -1,1 +1,1 @@
-### This analysis is for quantifying the impact of microcredit and constriving a more sustainble microcredit model.
+This analysis aims to quantify the impact of microcredit and to constrive a more sustainble financial model.
