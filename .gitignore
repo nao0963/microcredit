@@ -1,0 +1,33 @@
+# Environments
+.env
+.venv
+/venv/
+
+# Docker
+.dockerignore
+docker-compose.yml
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Data files - ignore raw data, but track the directory structure
+/data/raw/*
+/datasets/*
+!/data/raw/.gitkeep
+!/datasets/.gitkeep
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Editor and OS specific
+.history
+.DS_Store
+.vscode/

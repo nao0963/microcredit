@@ -1,0 +1,13 @@
+services:
+  analysis_jupyter:
+    build: .
+    ports:
+      # Bind to 127.0.0.1 (localhost) to ensure the service is not exposed
+      # to the public network. It will only be accessible from your local machine.
+      - "127.0.0.1:${JUPYTER_PORT}:8888" # Jupyter Notebook port
+      - "127.0.0.1:8050:8050" # Dash app port
+    volumes:
+      # Mount the entire project directory to the container's working directory.
+      # This ensures that all your local files (notebooks, src, data) are
+      - .:/home/jovyan/work
+    command: start-notebook.py --NotebookApp.token='${JUPYTER_TOKEN}'
